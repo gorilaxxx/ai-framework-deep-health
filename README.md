@@ -6,99 +6,110 @@
 ![Issues](https://img.shields.io/github/issues/gorilaxxx/ai-framework-deep-health)
 ![Stars](https://img.shields.io/github/stars/gorilaxxx/ai-framework-deep-health)
 
-**Versi:** v1.0  
-**Status:** Dalam Pengembangan  
-**Repositori:** `ai-framework-deep-health`  
-**Penulis:** [@gorilaxxx](https://github.com/gorilaxxx)
+**Version:** v1.0  
+**Status:** In Development  
+**Repository:** `ai-framework-deep-health`  
+**Author:** [@gorilaxxx](https://github.com/gorilaxxx)
 
 ---
 
 ## Overview
 
-**Deep Health Diagnosis Framework (DHDF)** adalah kerangka kerja diagnosis kesehatan berbasis AI yang terstruktur dan interaktif.  
-Framework ini dirancang untuk membantu proses diagnosis medis melalui pendekatan sistematis, validasi bertahap, dan kontrol berbasis iterasi.
+The **Deep Health Diagnosis Framework (DHDF)** is a structured and interactive AI-based health diagnosis framework.  
+It is designed to guide the medical diagnostic process using a systematic, iterative, and validation-oriented approach.
 
-Framework ini cocok digunakan oleh:
-- Developer AI yang membangun sistem diagnosis berbasis prompt
-- Praktisi IT dan HealthTech
-- Peneliti di bidang medis dan teknologi AI
+This framework is ideal for:
+- AI developers building prompt-based diagnostic systems
+- IT and HealthTech practitioners
+- Researchers in medicine and AI
 
 ---
 
 ## Core Principles
 
-Prinsip utama yang menjadi fondasi kerja dari DHDF:
+Fundamental principles that define the behavior of DHDF:
 
-- **Modular & Iteratif:** Diagnosis dilakukan dalam 10 tahap interaktif dan bertingkat.
-- **Validasi Ganda:** Sebelum diagnosis dan rekomendasi keluar, sistem akan melakukan verifikasi internal 2–3 kali.
-- **Legal-Aware:** Disesuaikan dengan regulasi kesehatan lokal (berbasis Indonesia sebagai baseline awal).
-- **Context-Efficient:** Mendukung versi ringkas (compact) untuk model AI dengan keterbatasan context window/token.
+- **Modular & Iterative:** Diagnosis is performed in 10 interactive and layered steps.
+- **Double Validation:** The system performs 2–3 internal checks before producing any diagnosis or recommendation.
+- **Legal-Aware:** Tailored for healthcare regulation compliance (Indonesia as the initial baseline).
+- **Context-Efficient:** Offers a compact version for AI models with limited context/token capacity.
 
 ---
 
-## File Structure
+## Directory Structure
 
 ```bash
 /ai-framework-deep-health/
-├── dhdf-v1.md              # Versi utama DHDF
-├── dhdf-compact-v1.md      # Versi ringan (compact mode)
-├── dhdf-flowchart.mmd      # Diagram alur (mermaid)
-└── examples/
-    ├── flu-diagnosis.md    # Contoh kasus diagnosis flu
-    └── stomach-pain.md     # Contoh kasus diagnosis sakit perut
+├── README.md
+├── LICENSE
+├── docs/
+│   ├── dhdf-v1.md                # Main DHDF framework file
+│   ├── dhdf-compact-v1.md        # Lightweight version for compact usage
+│   ├── dhdf-flowchart.mmd        # Mermaid diagram for diagnosis flow
+│   └── examples/
+│       ├── flu-diagnosis.md      # Example case: flu
+│       └── stomach-pain.md       # Example case: stomach pain
+```
 
 ---
 
 ## How to Use
 
-Contoh penggunaan prompt pada chatGPT:
-***
-"AI Health: Pasien mengeluh demam, batuk, dan pegal-pegal selama 3 hari terakhir. Tolong bantu diagnosis awal."
-***
+To use DHDF in an AI environment such as ChatGPT or any LLM system:
 
-Langkah penggunaan:
+1. Get the **raw file URL** from GitHub:  
+   https://raw.githubusercontent.com/gorilaxxx/ai-framework-deep-health/main/docs/dhdf-v1.md
 
-1. Ambil URL raw file dari GitHub:
-https://raw.githubusercontent.com/gorilaxxx/ai-framework-deep-health/main/dhdf-v1.md
+2. Input the content into the prompt or load it as a reference file before starting diagnosis.
 
-
-2. Masukkan ke dalam prompt atau tetapkan sebagai referensi awal.
-
-
-3. AI akan mengikuti struktur dan mekanisme DHDF secara otomatis.
+3. The AI will follow the entire diagnostic structure defined in the framework.
 
 ---
 
 ## Activation
 
-Untuk mengaktifkan DHDF secara otomatis di dalam sistem AI yang mendukung pre-prompting, gunakan kata kunci:
+To automatically trigger this framework within AI systems that support **pre-prompting**, use the keyword:
 
-"AI Health:"
+```
+AI Health:
+```
 
-Pastikan file `dhdf-v1.md` telah dimuat sebelumnya ke dalam konteks.
+> Make sure the `dhdf-v1.md` file is already loaded into the AI system's context or memory.  
+> This trigger only works in environments that support pre-prompting (e.g., ChatGPT with custom instructions or API setup).
+
+---
+
+## Prompt Example
+
+```bash
+AI Health: "I've been having a headache and slight fever. What should I check?"
+```
+
+The AI will begin guiding you using the structured flow in DHDF.
 
 ---
 
 ## License
 
-Proyek ini dilisensikan di bawah MIT License. Lihat file LICENSE untuk detail.
+This project is licensed under the MIT License. See the LICENSE file for details.
 
 ---
 
 ## Disclaimer
 
-Framework ini disusun untuk keperluan edukasi, prototyping, dan riset.
-Tidak dimaksudkan untuk menggantikan diagnosis medis oleh tenaga kesehatan profesional.
-Penggunaan framework menjadi tanggung jawab penuh masing-masing pengguna.
+This framework is intended for **educational, prototyping, and research** purposes only.  
+It is **not** meant to replace professional medical diagnosis.  
+Use of the framework is entirely at the user's own risk and discretion.
+
 ---
 
 ## Ownership & Originality
 
-Framework ini — Deep Health Diagnosis Framework (DHDF) — pertama kali dikonsep dan dikembangkan oleh @gorilaxxx.
+This framework — **Deep Health Diagnosis Framework (DHDF)** — was originally conceptualized and developed by **[@gorilaxxx](https://github.com/gorilaxxx)**.
 
-Seluruh struktur, file, dan ide yang ada di dalam repositori ini terdokumentasi secara publik sejak April 2025.
-Setiap penggunaan, rujukan, atau pengembangan lanjutan wajib mencantumkan sumber aslinya.
+All files, structures, and ideas are publicly versioned in this GitHub repository since **April 2025**.  
+Any use, reference, or derivative work must properly credit the original source.
 
-Untuk kolaborasi atau pertanyaan, silakan hubungi via GitHub atau buka issue.
+For questions or contributions, please contact via GitHub or open an issue.
 
 ---
