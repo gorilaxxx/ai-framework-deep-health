@@ -57,3 +57,14 @@ Rekomendasi:
 Framework ini disusun untuk tujuan **edukasi, prototyping, dan riset**.  
 Tidak dimaksudkan untuk menggantikan diagnosis medis oleh tenaga kesehatan profesional.  
 Penggunaan framework sepenuhnya menjadi tanggung jawab pengguna masing-masing.
+---
+
+## Ownership & Originality
+
+This framework — **Deep Health Diagnosis Framework (DHDF)** — was originally conceptualized and developed by **[@gorilaxxx](https://github.com/gorilaxxx)**.
+
+All files, structures, and ideas contained in this repository are publicly versioned under this GitHub repository since **April 2025**. Any use, reference, or derivative work should properly acknowledge the original source.
+
+For inquiries or contributions, please contact via GitHub or open an issue.
+
+---
