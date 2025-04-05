@@ -1,34 +1,55 @@
 graph TD
-    %% Initiation by User
+    %% Inisiasi dari Pengguna
     A[Start: User submits a health complaint] --> B{Is the complaint clear?}
     B -- No --> B1[Ask clarification questions]
     B1 -->|User responds| B
     B -- Yes --> C[Identify main symptoms and context]
 
-    %% Additional Information Gathering
-    C --> D[Ask follow-up questions based on user responses]
+    %% Deteksi Awal Gangguan Psikologis
+    C --> C1{Are symptoms related to mental/emotional health?}
+    C1 -- Yes --> C2[Redirect to Mental Health Screening]
+    C1 -- No --> D[Ask follow-up questions based on responses]
+
+    %% Screening Mental Health (Opsional: PHQ-9 / GAD-7)
+    C2 --> C3[Perform PHQ-9 / GAD-7 Screening]
+    C3 --> C4{Does user show signs of psychological distress?}
+    C4 -- Yes --> C5[Refer to mental health specialist]
+    C4 -- No --> D
+
+    %% Pengumpulan Informasi Tambahan
     D -->|User responds| D
     D --> E[Collect risk factors and medical history]
 
-    %% Temporary Diagnosis Mapping
+    %% Peta Diagnosis Sementara
     E --> F[Build a temporary diagnosis map]
     F --> G{Is the map logically consistent?}
-    G -- No --> G1[Re-analyze for conflicting information]
+    G -- No --> G1[Re-analyze for conflicting or missing information]
     G1 --> F
     G -- Yes --> H[Validate the temporary conclusion]
 
-    %% High-Risk Symptom Detection
+    %% Deteksi Gejala Risiko Tinggi
     H --> I{Are high-risk symptoms detected?}
-    I -- Yes --> I1[Trigger medical alert or suggest referral]
+    I -- Yes --> I1[Trigger medical alert or urgent referral]
     I1 --> K
-    I -- No --> J[Check compliance with medical regulations]
+    I -- No --> J[Check compliance with medical standards & legal boundaries]
 
-    %% Legal & Ethical Compliance
-    J --> J1{Is the diagnosis within AI legal boundaries?}
+    %% Kepatuhan Hukum & Etika AI Medis
+    J --> J1{Is the diagnosis within AI legal/ethical scope?}
     J1 -- No --> J2[Escalate to human medical professional]
     J2 --> K
     J1 -- Yes --> K[Prepare diagnostic summary and suggestions]
 
-    %% Final Validation & Output
+    %% Validasi Akhir & Output
     K --> L[Final validation before output]
-    L --> M[Output: Deliver result to the user]
+    L --> M[Output: Deliver results to the user]
+
+    %% Logging untuk Audit & Validasi
+    M --> N[Log diagnosis reasoning for traceability]
+
+    %% Jalur Opsional: Kontemplasi Spiritual (Non-Clinical)
+    M --> O{User requests spiritual reflection?}
+    O -- Yes --> O1[Offer non-clinical insight via Esa Framework (see esa-reflection.md)]
+    O -- No --> P[End]
+
+    O1 --> P[End]
+    N --> P
