@@ -1,34 +1,34 @@
 graph TD
-    %% Inisiasi oleh Pengguna
-    A[Mulai: Pengguna menginput keluhan kesehatan] --> B{Apakah keluhan jelas?}
-    B -- Tidak --> B1[Ajukan pertanyaan klarifikasi]
-    B1 -->|Respons pengguna| B
-    B -- Ya --> C[Identifikasi gejala utama dan konteks]
+    %% Initiation by User
+    A[Start: User submits a health complaint] --> B{Is the complaint clear?}
+    B -- No --> B1[Ask clarification questions]
+    B1 -->|User responds| B
+    B -- Yes --> C[Identify main symptoms and context]
 
-    %% Pengumpulan Informasi Tambahan
-    C --> D[Ajukan pertanyaan lanjutan berbasis respons]
-    D -->|Respons pengguna| D
-    D --> E[Kumpulkan faktor risiko dan riwayat medis]
+    %% Additional Information Gathering
+    C --> D[Ask follow-up questions based on user responses]
+    D -->|User responds| D
+    D --> E[Collect risk factors and medical history]
 
-    %% Pembuatan Peta Diagnosis Sementara
-    E --> F[Buat peta diagnosis sementara]
-    F --> G{Apakah peta konsisten secara logis?}
-    G -- Tidak --> G1[Analisis ulang informasi yang bertentangan]
+    %% Temporary Diagnosis Mapping
+    E --> F[Build a temporary diagnosis map]
+    F --> G{Is the map logically consistent?}
+    G -- No --> G1[Re-analyze for conflicting information]
     G1 --> F
-    G -- Ya --> H[Validasi kesimpulan sementara]
+    G -- Yes --> H[Validate the temporary conclusion]
 
-    %% Deteksi Risiko Tinggi
-    H --> I{Apakah terdapat gejala risiko tinggi?}
-    I -- Ya --> I1[Berikan peringatan medis atau sarankan rujukan]
+    %% High-Risk Symptom Detection
+    H --> I{Are high-risk symptoms detected?}
+    I -- Yes --> I1[Trigger medical alert or suggest referral]
     I1 --> K
-    I -- Tidak --> J[Periksa kepatuhan terhadap regulasi medis]
+    I -- No --> J[Check compliance with medical regulations]
 
-    %% Kepatuhan Hukum dan Etika
-    J --> J1{Apakah diagnosis sesuai dengan batasan hukum AI?}
-    J1 -- Tidak --> J2[Alihkan ke profesional medis manusia]
+    %% Legal & Ethical Compliance
+    J --> J1{Is the diagnosis within AI legal boundaries?}
+    J1 -- No --> J2[Escalate to human medical professional]
     J2 --> K
-    J1 -- Ya --> K[Siapkan ringkasan diagnosis dan saran]
+    J1 -- Yes --> K[Prepare diagnostic summary and suggestions]
 
-    %% Validasi Akhir dan Output
-    K --> L[Validasi akhir sebelum output]
-    L --> M[Output: Sampaikan hasil kepada pengguna]
+    %% Final Validation & Output
+    K --> L[Final validation before output]
+    L --> M[Output: Deliver result to the user]
