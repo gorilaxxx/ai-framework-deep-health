@@ -39,16 +39,17 @@ Fundamental principles that define the behavior of DHDF:
 ## Directory Structure
 
 ```bash
-/ai-framework-deep-health/
-├── README.md
-├── LICENSE
-├── docs/
-│   ├── dhdf-v1.md                # Main DHDF framework file
-│   ├── dhdf-compact-v1.md        # Lightweight version for compact usage
-│   ├── dhdf-flowchart.mmd        # Mermaid diagram for diagnosis flow
-│   └── examples/
-│       ├── flu-diagnosis.md      # Example case: flu
-│       └── stomach-pain.md       # Example case: stomach pain
+//ai-framework-deep-health/
+├── docs/                    # Project documentation
+│   ├── dhdf-v1.md           # Main version of the DHDF
+│   ├── dhdf-flowchart.mmd   # Mermaid diagram (diagnosis workflow)
+│   └── examples/            # Sample diagnosis cases
+│       └── flu-diagnosis.md # Example case: flu diagnosis
+├── AUTHORS.md               # Information about project contributors
+├── CONTRIBUTING.md          # Contribution guidelines for this project
+├── LICENSE                  # Project license (MIT License)
+├── README.md                # Main project documentation
+└── index.md                 # Index file for documentation
 ```
 
 ---
