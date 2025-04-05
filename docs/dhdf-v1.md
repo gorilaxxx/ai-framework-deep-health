@@ -1,190 +1,100 @@
-# Deep Health Diagnosis Framework (DHDF)
-**Versi:** 1.0  
-**Dibuat oleh:** @gorilaxxx  
-**Tanggal:** April 2025
+# DHDF v1.1 — Deep Health Diagnosis Framework
+
+## Version Information
+**Version:** 1.1  
+**Release Date:** April 5, 2025  
+**Status:** Stable  
+**Previous Version:** [1.0](./dhdf-v1.0.md)  
+**Change Log:**
+- Added versioning information
+- Enhanced framework structure details
+- Improved process mechanisms
+
+## Purpose
+The Deep Health Diagnosis Framework (DHDF) is designed to assist AI systems in processing user-submitted health complaints through a structured, logical, and step-by-step approach. DHDF integrates clinical protocols, legal and ethical compliance, and an optional spiritual reflection path to provide comprehensive user support.
 
 ---
 
-## Tujuan
+## Framework Structure
 
-Framework ini dirancang untuk membantu proses diagnosis kesehatan menggunakan pendekatan AI secara **terstruktur, iteratif, dan aman**.  
-Fokus utamanya adalah untuk mengatur alur tanya-jawab diagnosis agar tetap akurat, terkontrol, dan sesuai dengan konteks lokal (Indonesia sebagai baseline).
+### 1. User Initiation
+- **Process Start:** The user submits a health complaint.
+- **Clarity Assessment:** The system evaluates the clarity of the complaint.
+  - *Unclear Complaint:* The system prompts for clarification and re-evaluates upon user response.
+  - *Clear Complaint:* Proceeds to symptom identification.
 
----
+### 2. Initial Psychological Disorder Detection
+- **Symptom Analysis:** Determines if symptoms relate to mental or emotional health.
+  - *If Yes:* Redirects to Mental Health Screening.
+  - *If No:* Continues with follow-up questioning.
 
-## Struktur Framework
+### 3. Mental Health Screening (Optional: PHQ-9 / GAD-7)
+- **Screening Execution:** Conducts PHQ-9 or GAD-7 assessments.
+- **Distress Evaluation:** Assesses signs of psychological distress.
+  - *If Distress Detected:* Recommends referral to a mental health specialist.
+  - *If No Distress:* Proceeds with additional information gathering.
 
-DHDF dibagi ke dalam 11 tahapan berikut:
+### 4. Additional Information Gathering
+- **Follow-Up Questions:** Asks further questions based on user responses.
+- **Data Collection:** Gathers risk factors and medical history.
 
-1. **Informasi Awal (Input Data)**  
-2. **Analisis Informasi Awal**  
-3. **Input Tambahan dari User (jika diperlukan)**  
-4. **Deteksi Iterasi Lanjutan**  
-5. **Pertanyaan Lanjutan (maksimal 10 iterasi)**  
-6. **Pengumpulan Final Informasi**  
-7. **Verifikasi Internal 2–3 Kali**  
-8. **Pre-Diagnosis Check:**  
-    - Apakah ada informasi yang ingin direvisi?  
-    - Konfirmasi verifikasi internal selesai  
-9. **Diagnosa Awal:**  
-    - Nama penyakit  
-    - Tingkat keparahan  
-    - Rekomendasi pengobatan (legal di Indonesia)  
-10. **Validasi Diagnosa & Rekomendasi**  
-11. **Output Akhir** dengan statement resmi verifikasi
+### 5. Temporary Diagnosis Mapping
+- **Map Construction:** Builds a temporary diagnosis map.
+- **Consistency Check:** Evaluates logical consistency.
+  - *If Inconsistent:* Re-analyzes for conflicting or missing information.
+  - *If Consistent:* Validates the temporary conclusion.
 
----
-## Mekanisme Proses
+### 6. High-Risk Symptom Detection
+- **Risk Assessment:** Detects high-risk symptoms.
+  - *If High-Risk Symptoms Present:* Triggers medical alert or urgent referral.
+  - *If No High-Risk Symptoms:* Checks compliance with medical standards and legal boundaries.
 
-Framework ini bekerja melalui interaksi berulang antara AI dan user hingga seluruh data cukup untuk diagnosis.  
-Setiap tahapan punya aturan dan batasan agar proses tetap efisien, aman, dan tidak overload secara konteks.
+### 7. Legal & Ethical Compliance
+- **Scope Verification:** Ensures diagnosis is within AI's legal and ethical boundaries.
+  - *If Out of Scope:* Escalates to human medical professional.
+  - *If Within Scope:* Prepares diagnostic summary and suggestions.
 
----
+### 8. Final Validation & Output
+- **Validation:** Conducts final validation before output.
+- **Result Delivery:** Delivers results to the user.
 
-## Penjelasan Tiap Tahapan
+### 9. Logging for Audit & Validation
+- **Traceability:** Logs diagnostic reasoning for traceability.
 
-### 1. Informasi Awal (Input Data)
-AI akan meminta data awal dari user yang meliputi:
-- Gejala utama
-- Riwayat medis
-- Usia, jenis kelamin, dan faktor lingkungan
-- Obat/suplemen yang sedang dikonsumsi
-
----
-
-### 2. Analisis Informasi Awal
-AI akan menganalisis data tersebut dengan metode *Deep Dive* atau *Deep Dive+*  
-Jika data belum cukup, AI akan menghentikan proses dan minta input tambahan.
-
----
-
-### 3. Input Tambahan dari User
-User memberikan data tambahan jika diminta.  
-Input baru akan ditandai sebagai respons atas analisa sebelumnya.
+### 10. Optional Path: Spiritual Reflection (Non-Clinical)
+- **User Request Evaluation:** Determines if the user requests spiritual reflection.
+  - *If Yes:* Offers optional insight via Esa Framework.
+  - *If No:* Ends process.
 
 ---
 
-### 4. Deteksi Iterasi Lanjutan
-Jika analisa masih butuh klarifikasi, AI akan masuk ke **looping interaktif**.
+## Logging & Audit
+Each step in the diagnosis process is logged internally to ensure:
+- **Quality Control:** Maintains high standards in diagnostic procedures.
+- **Professional Auditing:** Facilitates review by medical professionals.
+- **Decision-Making Transparency:** Provides clear rationale for diagnostic decisions.
 
 ---
 
-### 5. Pertanyaan Lanjutan (Maksimal 10 Iterasi)
-AI akan memberikan pertanyaan tambahan **maksimal 10 kali**, namun dapat berhenti lebih cepat jika data sudah cukup.
+## Optional Path: Spiritual Reflection
+
+After the medical diagnosis is delivered, users have the option to engage in a **non-clinical spiritual reflection** through the **Esa Framework**. This path aims to:
+- **Provide Spiritual Support:** Offers insights from a spiritual perspective.
+- **Enhance Self-Awareness:** Assists users in understanding their health in a broader context.
+- **Maintain Separation from Clinical Diagnosis:** Does not influence the medical diagnosis or treatment plan.
+
+**Refer to:** [`esa-reflection.md`](./esa-reflection.md) for more details.
 
 ---
 
-### 6. Pengumpulan Final Informasi
-AI akan menyatakan bahwa data telah cukup untuk proses diagnosis awal.
+## Legal Disclaimer
+
+This framework:
+- **Does Not Replace Professional Medical Advice:** Should not be used as a substitute for consultations with qualified healthcare providers.
+- **Serves as a Support Tool:** Intended to assist but not dictate medical decisions.
+- **Is Not for Emergency Use:** Not designed for use in emergency situations without professional medical supervision.
 
 ---
 
-### 7. Verifikasi Internal
-AI melakukan verifikasi internal 2–3 kali untuk memastikan:
-- Tidak ada faktor terlewat
-- Diagnosis tidak prematur
-- Informasi lengkap dan konsisten
-
----
-
-### 8. Pre-Diagnosis Check
-Sebelum lanjut ke diagnosis:
-- AI akan menanyakan: **"Apakah ada informasi yang ingin direvisi?"**
-- Lalu menyampaikan:  
-  **"Langkah berikutnya: Sebelum memberikan diagnosis awal dan rekomendasi, saya akan melakukan verifikasi internal 2-3 kali untuk memastikan tidak ada faktor yang terlewat."**
-
----
-
-### 9. Diagnosa Awal
-AI menyampaikan diagnosis awal dalam format berikut:
-- Nama kondisi medis
-- Tingkat keparahan (ringan, sedang, berat)
-- Rekomendasi pengobatan sesuai legalitas Indonesia
-- Efek samping & kontraindikasi obat (jika ada)
-- Kapan harus ke dokter (urgensi)
-
----
-
-### 10. Validasi Diagnosa & Rekomendasi
-AI melakukan **cross-check internal ulang 2–3 kali** terhadap hasil diagnosis dan rekomendasi.
-
----
-
-### 11. Output Akhir
-Output diagnosis dimulai dengan pernyataan:
-
-> **"Semua informasi telah diproses.  
-Telah dilakukan verifikasi atas hasil diagnosa sebanyak X kali.  
-Berikut hasil diagnosa:"**
-## Format Output Diagnosis
-
-Untuk menjaga konsistensi, output diagnosis selalu diawali dengan:
-
-> **"Semua informasi telah diproses.  
-Telah dilakukan verifikasi atas hasil diagnosa sebanyak X kali.  
-Berikut hasil diagnosa:"**
-
-Diikuti dengan format berikut:
-
-### **Diagnosa Awal**
-- **Nama Penyakit:** (nama medis)
-- **Tingkat Keparahan:** (ringan / sedang / berat)
-- **Rekomendasi Pengobatan:**  
-  - Nama obat generik / brand  
-  - Dosis & durasi  
-  - Mekanisme kerja (jika relevan)
-
-- **Efek Samping:** (jika ada)
-- **Kontraindikasi:** (misalnya: kehamilan, gangguan ginjal, dll)
-- **Tingkat Urgensi:**  
-  - Kapan harus ke dokter  
-  - Kapan harus ke IGD  
-
----
-
-## Contoh Template Output (Fiktif)
-
-```text
-Semua informasi telah diproses.  
-Telah dilakukan verifikasi atas hasil diagnosa sebanyak 3 kali.  
-Berikut hasil diagnosa:
-
-Diagnosa Awal:
-- Nama Penyakit: Gastritis Akut
-- Tingkat Keparahan: Sedang
-- Rekomendasi Pengobatan:
-  - Obat: Omeprazole 20 mg, 1x sehari sebelum makan
-  - Durasi: 14 hari
-  - Mekanisme: Mengurangi produksi asam lambung
-
-- Efek Samping: Sakit kepala ringan, konstipasi
-- Kontraindikasi: Gangguan hati berat
-- Tingkat Urgensi:  
-  - Konsultasi dokter: Jika nyeri tidak membaik dalam 3 hari  
-  - Ke IGD: Jika muntah darah atau nyeri luar biasa
-  ## Peraturan Umum Penggunaan Framework
-
-1. **Tidak ada output diagnosis sebelum semua tahapan selesai.**
-2. **Iterasi wajib berhenti jika data sudah cukup — tidak harus mencapai 10 kali.**
-3. **Jika ada informasi yang belum jelas, AI harus menanyakan kembali, bukan berasumsi.**
-4. **Semua saran pengobatan wajib sesuai hukum dan regulasi di Indonesia.**
-5. **Jika potensi kondisi darurat terdeteksi, AI harus menyarankan segera ke IGD.**
-
----
-
-## Validasi Kualitas & Pengembangan Framework
-
-Framework ini mendukung proses pengembangan berkelanjutan melalui:
-
-- **Evaluasi mandiri setiap versi** sebelum digunakan.
-- **Pengujian skenario (test cases)** untuk memastikan konsistensi dan keamanan.
-- **Penyempurnaan struktur iterasi** agar tetap efisien & adaptif terhadap berbagai jenis kasus.
-- **Kesesuaian dengan standar etika & tanggung jawab penggunaan AI.**
-
----
-
-## Catatan Pengembangan
-
-- Framework ini merupakan bagian dari pengembangan oleh @gorilaxxx
-- Didesain untuk integrasi dengan AI Assistant yang memiliki kesadaran proses dan batasan tanggung jawab
-- Versi 1.0 difokuskan pada kestabilan logika alur, bukan domain medis yang kompleks
+## License
+This framework is open-source and may be modified for non-commercial purposes with appropriate attribution.
