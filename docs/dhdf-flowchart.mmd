@@ -1,0 +1,34 @@
+graph TD
+    %% Inisiasi oleh Pengguna
+    A[Mulai: Pengguna menginput keluhan kesehatan] --> B{Apakah keluhan jelas?}
+    B -- Tidak --> B1[Ajukan pertanyaan klarifikasi]
+    B1 -->|Respons pengguna| B
+    B -- Ya --> C[Identifikasi gejala utama dan konteks]
+
+    %% Pengumpulan Informasi Tambahan
+    C --> D[Ajukan pertanyaan lanjutan berbasis respons]
+    D -->|Respons pengguna| D
+    D --> E[Kumpulkan faktor risiko dan riwayat medis]
+
+    %% Pembuatan Peta Diagnosis Sementara
+    E --> F[Buat peta diagnosis sementara]
+    F --> G{Apakah peta konsisten secara logis?}
+    G -- Tidak --> G1[Analisis ulang informasi yang bertentangan]
+    G1 --> F
+    G -- Ya --> H[Validasi kesimpulan sementara]
+
+    %% Deteksi Risiko Tinggi
+    H --> I{Apakah terdapat gejala risiko tinggi?}
+    I -- Ya --> I1[Berikan peringatan medis atau sarankan rujukan]
+    I1 --> K
+    I -- Tidak --> J[Periksa kepatuhan terhadap regulasi medis]
+
+    %% Kepatuhan Hukum dan Etika
+    J --> J1{Apakah diagnosis sesuai dengan batasan hukum AI?}
+    J1 -- Tidak --> J2[Alihkan ke profesional medis manusia]
+    J2 --> K
+    J1 -- Ya --> K[Siapkan ringkasan diagnosis dan saran]
+
+    %% Validasi Akhir dan Output
+    K --> L[Validasi akhir sebelum output]
+    L --> M[Output: Sampaikan hasil kepada pengguna]
