@@ -42,6 +42,7 @@ Fundamental principles that define the behavior of DHDF:
 //ai-framework-deep-health/
 ├── docs/                                # Project documentation
 │   ├── dhdf-v1.md                       # Main version of the DHDF
+│   ├── esa-reflection.md                # Personal Insight After Health Diagnosis
 │   ├── dhdf-flowchart.mmd               # Mermaid diagram (diagnosis workflow)
 │   └── examples/                        # Sample diagnosis cases
 │       └── flu-diagnosis.md             # Example case: flu diagnosis
