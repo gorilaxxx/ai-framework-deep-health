@@ -38,7 +38,7 @@ Fundamental principles that define the behavior of DHDF:
 
 ## Directory Structure
 
-+++bash
+```bash
 //ai-framework-deep-health/
 ├── docs/                                # Project documentation
 │   ├── dhdf-v1.md                       # Main version of the DHDF
@@ -52,7 +52,7 @@ Fundamental principles that define the behavior of DHDF:
 ├── LICENSE                              # Project license (CC BY-NC 4.0)
 ├── README.md                            # Main project documentation
 └── index.md                             # Index file for documentation
-+++
+```
 
 ---
 
@@ -73,9 +73,9 @@ To use DHDF in an AI environment such as ChatGPT or any LLM system:
 
 To automatically trigger this framework within AI systems that support **pre-prompting**, use the keyword:
 
-+++bash
+```bash
 AI Health:
-+++
+```
 
 > Make sure the `dhdf-v1.md` file is already loaded into the AI system's context or memory.  
 > This trigger only works in environments that support pre-prompting (e.g., ChatGPT with custom instructions or API setup).
@@ -84,9 +84,9 @@ AI Health:
 
 ## Prompt Example
 
-+++bash
+```bash
 AI Health: "I've been having a headache and slight fever. What should I check?"
-+++
+```
 
 The AI will begin guiding you using the structured flow in DHDF.
 
