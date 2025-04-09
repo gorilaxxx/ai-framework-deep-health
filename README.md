@@ -94,12 +94,12 @@ The AI will begin guiding you using the structured flow in DHDF.
 
 ## ⚖️ License
 
-This framework is licensed under **Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)**.  
+This framework is licensed under the **Creative Commons Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)** license.  
 You may use, share, and adapt the materials for **non-commercial** purposes, provided that proper attribution is given.
 
-> For **commercial licensing**, please contact the author to obtain permission and discuss intellectual fee terms.
+> ⚠️ For **commercial licensing**, please refer to the [COMMERCIAL-LICENSE.md](./COMMERCIAL-LICENSE.md) for detailed terms and contact instructions.
 
-🔗 [Read the full license here »](https://creativecommons.org/licenses/by-nc/4.0/)
+🔗 [View the full license text »](https://creativecommons.org/licenses/by-nc/4.0/)
 
 ---
 
