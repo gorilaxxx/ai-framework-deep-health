@@ -7,7 +7,7 @@
 ![Stars](https://img.shields.io/github/stars/gorilaxxx/ai-framework-deep-health)
 
 **Version:** v1.0  
-**Status:** Stable (v1.0)
+**Status:** Stable [v1.0]
 **Repository:** `ai-framework-deep-health`  
 **Author:** [@gorilaxxx](https://github.com/gorilaxxx)
 
