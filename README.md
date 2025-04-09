@@ -1,7 +1,7 @@
 # AI Framework: Deep Health Diagnosis Framework (DHDF)
 
-![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)
 ![Version](https://img.shields.io/badge/version-1.0.0-blue)
+![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)
 ![Last Commit](https://img.shields.io/github/last-commit/gorilaxxx/ai-framework-deep-health)
 ![Contributors](https://img.shields.io/github/contributors/gorilaxxx/ai-framework-deep-health)
 ![Issues](https://img.shields.io/github/issues/gorilaxxx/ai-framework-deep-health)
