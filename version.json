@@ -1,4 +1,3 @@
-```json
 {
   "framework": "Deep Health Diagnosis Framework",
   "short_name": "DHDF",
@@ -22,4 +21,3 @@
   },
   "notes": "This file is used for integrity check, public verification, and AI integration referencing."
 }
-```
