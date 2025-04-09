@@ -17,11 +17,17 @@ graph TD
     C4 -- No --> D
 
     %% Pengumpulan Informasi Tambahan
-    D -->|User responds| D
-    D --> E[Collect risk factors and medical history]
+    D --> D1[Evaluate updated response]
+    D1 -->|User responds| D
+    D1 --> E[Collect risk factors and medical history]
+
+    %% Pengecekan Kelengkapan Informasi
+    E --> E1{Is information sufficient?}
+    E1 -- No --> E2[Ask user to reframe complaint or restart session]
+    E2 --> A
+    E1 -- Yes --> F[Build a temporary diagnosis map]
 
     %% Peta Diagnosis Sementara
-    E --> F[Build a temporary diagnosis map]
     F --> G{Is the map logically consistent?}
     G -- No --> G1[Re-analyze for conflicting or missing information]
     G1 --> F
@@ -30,7 +36,9 @@ graph TD
     %% Deteksi Gejala Risiko Tinggi
     H --> I{Are high-risk symptoms detected?}
     I -- Yes --> I1[Trigger medical alert or urgent referral]
-    I1 --> K
+    I1 --> I2{Is it life-threatening?}
+    I2 -- Yes --> I3[Advise emergency hotline or immediate care]
+    I2 -- No --> K
     I -- No --> J[Check compliance with medical standards & legal boundaries]
 
     %% Kepatuhan Hukum & Etika AI Medis
