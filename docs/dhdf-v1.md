@@ -6,11 +6,15 @@
 **Status:** Stable  
 **Previous Version:** [1.0](./dhdf-v1.0.md)  
 **Change Log:**
-- Added versioning information
-- Enhanced framework structure details
-- Improved process mechanisms
+- Added versioning information and file integrity control
+- Enhanced logical validation and emergency triage
+- Integrated Esa Framework for optional reflection
+- Improved traceability and input validation mechanisms
+
+---
 
 ## Purpose
+
 The Deep Health Diagnosis Framework (DHDF) is designed to assist AI systems in processing user-submitted health complaints through a structured, logical, and step-by-step approach. DHDF integrates clinical protocols, legal and ethical compliance, and an optional spiritual reflection path to provide comprehensive user support.
 
 ---
@@ -18,83 +22,96 @@ The Deep Health Diagnosis Framework (DHDF) is designed to assist AI systems in p
 ## Framework Structure
 
 ### 1. User Initiation
-- **Process Start:** The user submits a health complaint.
-- **Clarity Assessment:** The system evaluates the clarity of the complaint.
-  - *Unclear Complaint:* The system prompts for clarification and re-evaluates upon user response.
-  - *Clear Complaint:* Proceeds to symptom identification.
+- **Start:** User submits a health complaint.
+- **Clarity Check:** System evaluates clarity of complaint.
+  - *If unclear:* Prompt for clarification, then re-evaluate.
+  - *If clear:* Proceed to symptom identification.
 
 ### 2. Initial Psychological Disorder Detection
-- **Symptom Analysis:** Determines if symptoms relate to mental or emotional health.
-  - *If Yes:* Redirects to Mental Health Screening.
-  - *If No:* Continues with follow-up questioning.
+- **Symptom Analysis:** Determine if symptoms relate to mental/emotional health.
+  - *If Yes:* Redirect to Mental Health Screening.
+  - *If No:* Continue with follow-up questioning.
 
 ### 3. Mental Health Screening (Optional: PHQ-9 / GAD-7)
-- **Screening Execution:** Conducts PHQ-9 or GAD-7 assessments.
-- **Distress Evaluation:** Assesses signs of psychological distress.
-  - *If Distress Detected:* Recommends referral to a mental health specialist.
-  - *If No Distress:* Proceeds with additional information gathering.
+- **Execute Screening:** Conduct PHQ-9 or GAD-7.
+- **Evaluate Distress:**
+  - *If distress detected:* Suggest referral to mental health specialist.
+  - *If no distress:* Continue to data collection.
 
 ### 4. Additional Information Gathering
-- **Follow-Up Questions:** Asks further questions based on user responses.
-- **Data Collection:** Gathers risk factors and medical history.
+- **Ask Follow-Ups:** Based on previous responses.
+- **Collect Data:** Risk factors, medical history.
 
-### 5. Temporary Diagnosis Mapping
-- **Map Construction:** Builds a temporary diagnosis map.
-- **Consistency Check:** Evaluates logical consistency.
-  - *If Inconsistent:* Re-analyzes for conflicting or missing information.
-  - *If Consistent:* Validates the temporary conclusion.
+### 5. Input Sufficiency Validation
+- **Evaluate Completeness:**
+  - *If insufficient:* Ask user to reframe or restart complaint.
+  - *If sufficient:* Continue to temporary diagnosis.
 
-### 6. High-Risk Symptom Detection
-- **Risk Assessment:** Detects high-risk symptoms.
-  - *If High-Risk Symptoms Present:* Triggers medical alert or urgent referral.
-  - *If No High-Risk Symptoms:* Checks compliance with medical standards and legal boundaries.
+### 6. Temporary Diagnosis Mapping
+- **Build Map:** Create temporary diagnostic view.
+- **Consistency Check:**
+  - *If inconsistent:* Re-analyze for contradictions.
+  - *If consistent:* Proceed to conclusion validation.
 
-### 7. Legal & Ethical Compliance
-- **Scope Verification:** Ensures diagnosis is within AI's legal and ethical boundaries.
-  - *If Out of Scope:* Escalates to human medical professional.
-  - *If Within Scope:* Prepares diagnostic summary and suggestions.
+### 7. High-Risk Symptom Detection
+- **Risk Screening:** Identify signs of urgent conditions.
+  - *If high-risk:* Trigger medical alert or referral.
+  - *If life-threatening:* Prompt user to call emergency service.
+  - *If not high-risk:* Proceed to compliance check.
 
-### 8. Final Validation & Output
-- **Validation:** Conducts final validation before output.
-- **Result Delivery:** Delivers results to the user.
+### 8. Legal & Ethical Compliance
+- **Scope Review:**
+  - *If outside AI boundaries:* Escalate to human medical professional.
+  - *If compliant:* Prepare summary and recommendations.
 
-### 9. Logging for Audit & Validation
-- **Traceability:** Logs diagnostic reasoning for traceability.
+### 9. Final Validation & Output
+- **Validation:** Final review before output.
+- **Delivery:** Present output to user.
 
-### 10. Optional Path: Spiritual Reflection (Non-Clinical)
-- **User Request Evaluation:** Determines if the user requests spiritual reflection.
-  - *If Yes:* Offers optional insight via Esa Framework.
-  - *If No:* Ends process.
+### 10. Logging for Audit
+- **Traceability:** Log decisions for future audits and integrity checks.
+
+### 11. Optional Spiritual Reflection (Non-Clinical)
+- **User Request:** Check if user wants reflection.
+  - *If yes:* Offer optional non-clinical reflection as outlined in `esa-reflection.md`.
+  - *If no:* End process.
 
 ---
 
 ## Logging & Audit
-Each step in the diagnosis process is logged internally to ensure:
-- **Quality Control:** Maintains high standards in diagnostic procedures.
-- **Professional Auditing:** Facilitates review by medical professionals.
-- **Decision-Making Transparency:** Provides clear rationale for diagnostic decisions.
+
+Each step is logged internally to support:
+
+- **Quality Assurance**
+- **Professional Review**
+- **Transparent AI Diagnostics**
 
 ---
 
 ## Optional Path: Spiritual Reflection
 
-After the medical diagnosis is delivered, users have the option to engage in a **non-clinical spiritual reflection** through the **Esa Framework**. This path aims to:
-- **Provide Spiritual Support:** Offers insights from a spiritual perspective.
-- **Enhance Self-Awareness:** Assists users in understanding their health in a broader context.
-- **Maintain Separation from Clinical Diagnosis:** Does not influence the medical diagnosis or treatment plan.
+After medical diagnosis, users may optionally explore **non-clinical spiritual reflection** via the **Esa Framework**.  
+This layer offers:
 
-**Refer to:** [`esa-reflection.md`](./esa-reflection.md) for more details.
+- Broader inner perspective
+- Non-religious spiritual alignment
+- Deeper meaning exploration
+
+**See:** [`esa-reflection.md`](./esa-reflection.md)
 
 ---
 
 ## Legal Disclaimer
 
 This framework:
-- **Does Not Replace Professional Medical Advice:** Should not be used as a substitute for consultations with qualified healthcare providers.
-- **Serves as a Support Tool:** Intended to assist but not dictate medical decisions.
-- **Is Not for Emergency Use:** Not designed for use in emergency situations without professional medical supervision.
+
+- Does **not replace** professional diagnosis
+- Is **not for emergency use**
+- Is a structured **support tool**, not a definitive system
 
 ---
 
 ## License
-This framework is open-source and may be modified for non-commercial purposes with appropriate attribution.
+
+This framework is licensed under the **Creative Commons Attribution-NonCommercial 4.0 (CC BY-NC 4.0)** license.  
+For commercial use, refer to [`COMMERCIAL-LICENSE.md`](./COMMERCIAL-LICENSE.md).
