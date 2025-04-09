@@ -40,16 +40,17 @@ Fundamental principles that define the behavior of DHDF:
 
 ```bash
 //ai-framework-deep-health/
-├── docs/                    # Project documentation
-│   ├── dhdf-v1.md           # Main version of the DHDF
-│   ├── dhdf-flowchart.mmd   # Mermaid diagram (diagnosis workflow)
-│   └── examples/            # Sample diagnosis cases
-│       └── flu-diagnosis.md # Example case: flu diagnosis
-├── AUTHORS.md               # Information about project contributors
-├── CONTRIBUTING.md          # Contribution guidelines for this project
-├── LICENSE                  # Project license (MIT License)
-├── README.md                # Main project documentation
-└── index.md                 # Index file for documentation
+├── docs/                                # Project documentation
+│   ├── dhdf-v1.md                       # Main version of the DHDF
+│   ├── dhdf-flowchart.mmd               # Mermaid diagram (diagnosis workflow)
+│   └── examples/                        # Sample diagnosis cases
+│       └── flu-diagnosis.md             # Example case: flu diagnosis
+│       └── mild-gad-esa-reflection.md   # Example case: mild gad
+├── AUTHORS.md                           # Information about project contributors
+├── CONTRIBUTING.md                      # Contribution guidelines for this project
+├── LICENSE                              # Project license (MIT License)
+├── README.md                            # Main project documentation
+└── index.md                             # Index file for documentation
 ```
 
 ---
