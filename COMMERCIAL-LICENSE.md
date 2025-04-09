@@ -1,5 +1,7 @@
 # Commercial License Agreement
 
+![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-lightgrey.svg)
+
 **Framework:** AI Framework - Deep Health Diagnosis Framework (DHDF)  
 **Author & IP Holder:** [@gorilaxxx](https://github.com/gorilaxxx)  
 **License Type:** Non-Commercial — [CC BY-NC 4.0](https://creativecommons.org/licenses/by-nc/4.0/)  
