@@ -114,4 +114,4 @@ This framework:
 ## License
 
 This framework is licensed under the **Creative Commons Attribution-NonCommercial 4.0 (CC BY-NC 4.0)** license.  
-For commercial use, refer to [`COMMERCIAL-LICENSE.md`](./COMMERCIAL-LICENSE.md).
+For commercial use, refer to [`COMMERCIAL-LICENSE.md`](../COMMERCIAL-LICENSE.md).
