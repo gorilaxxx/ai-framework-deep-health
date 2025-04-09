@@ -1,1 +1,26 @@
-```json { "framework": "Deep Health Diagnosis Framework", "short_name": "DHDF", "version": "v1.1", "release_date": "2025-04-09", "license": "CC BY-NC 4.0", "author": { "name": "gorilaxxx", "github": "https://github.com/gorilaxxx" }, "files": { "flowchart": "docs/dhdf-flowchart.mmd", "core": "docs/dhdf-v1.md", "reflection": "docs/esa-reflection.md", "readme": "README.md" }, "hash": { "dhdf-v1.md": "7f5a2c08703846e3685092723c2c302d82bb8cd29bfbab894f8d033aeb35b73a", "dhdf-flowchart.mmd": "1b0c1079b2cfad5d20cfdcf7d2781e3e84291f12b2419e8e355c45b511c3c1b5", "esa-reflection.md": "d31d91f7a35e314be05cf1d0b47c4c991df0125c7b09fd0b8d3616c0a2c6dce2" }, "notes": "This file is used for integrity check, public verification, and AI integration referencing." } ```
+```json
+{
+  "framework": "Deep Health Diagnosis Framework",
+  "short_name": "DHDF",
+  "version": "v1.1",
+  "release_date": "2025-04-09",
+  "license": "CC BY-NC 4.0",
+  "author": {
+    "name": "gorilaxxx",
+    "github": "https://github.com/gorilaxxx"
+  },
+  "files": {
+    "flowchart": "docs/dhdf-flowchart.mmd",
+    "core": "docs/dhdf-v1.md",
+    "reflection": "docs/esa-reflection.md",
+    "readme": "README.md"
+  },
+  "hash": {
+    "dhdf-v1.md": "7f5a2c08703846e3685092723c2c302d82bb8cd29bfbab894f8d033aeb35b73a",
+    "dhdf-flowchart.mmd": "1b0c1079b2cfad5d20cfdcf7d2781e3e84291f12b2419e8e355c45b511c3c1b5",
+    "esa-reflection.md": "d31d91f7a35e314be05cf1d0b47c4c991df0125c7b09fd0b8d3616c0a2c6dce2"
+  },
+  "notes": "This file is used for integrity check, public verification, and AI integration referencing."
+}
+```
+---
